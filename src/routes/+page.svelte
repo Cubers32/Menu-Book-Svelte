@@ -1,3 +1,7 @@
+<script>
+	import MenuTile from "$lib/component/MenuTile.svelte";
+
+</script>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
