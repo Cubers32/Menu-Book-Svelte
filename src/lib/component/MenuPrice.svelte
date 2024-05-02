@@ -1,11 +1,35 @@
 <script lang="ts">
+	import MinusIcon from '$lib/icon/Minusicon.svelte'
+	import PlusIcon from '$lib/icon/Plusicon.svelte'
+	import { order } from '$lib/store/order';
+
 	export let label: string;
 	export let price: number;
+	export let menuId: string;
+	export let id: string;
+
+	$: compositeId = menuId + '_' + id;
+	$: counter = $order [compositeId] ?? 0;
+
+	const add = () => {
+		$order[compositeId] = counter + 1;
+	};
+
+	const substract = () => {
+		if (!$order[compositeId]) return;
+		$order[compositeId] = counter - 1;
+	};
+
 </script>
 
 <div class="menu-price-row">
 	<span class="price-description">{label}</span>
 	<span>{price}</span>
+	<div>
+		<button on:click={substract}><MinusIcon /></button>
+		<span>{counter}</span>
+		<button on:click={add}><PlusIcon /></button>
+	</div>
 </div>
 
 <style>
