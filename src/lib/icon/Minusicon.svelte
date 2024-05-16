@@ -1,24 +1,16 @@
-<svg
-	width="16px"
-	height="16px"
-	viewBox="0 -0.5 25 25"
-	fill="none"
-	xmlns="http://www.w3.org/2000/svg"
-	><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-		id="SVGRepo_tracerCarrier"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	></g><g id="SVGRepo_iconCarrier">
+<!--https://www.svgrepo.com/svg/505437/minus-circle-->
+
+<svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+	<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"> </g>
+	<g id="SVGRepo_iconCarrier">
 		<path
-			fill-rule="evenodd"
-			clip-rule="evenodd"
-			d="M5.5 12.0002C5.50024 8.66068 7.85944 5.78639 11.1348 5.1351C14.4102 4.48382 17.6895 6.23693 18.9673 9.32231C20.2451 12.4077 19.1655 15.966 16.3887 17.8212C13.6119 19.6764 9.91127 19.3117 7.55 16.9502C6.23728 15.6373 5.49987 13.8568 5.5 12.0002Z"
-			stroke="#000000"
+			d="M8 12H16M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+			stroke="#FF0000"
 			stroke-width="1.5"
 			stroke-linecap="round"
 			stroke-linejoin="round"
-		></path>
-		<path d="M15.125 12.0002H9.82501" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
-		></path>
-	</g></svg
->
+		>
+		</path>
+	</g>
+</svg>
