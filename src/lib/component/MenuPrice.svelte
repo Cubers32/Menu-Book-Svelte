@@ -1,7 +1,7 @@
 <script lang="ts">
 	import MinusIcon from '$lib/icon/Minusicon.svelte'
 	import PlusIcon from '$lib/icon/Plusicon.svelte'
-	import { order } from '$lib/store/order';
+	import { order, totalOrderValue } from '$lib/store/order';
 
 	export let label: string;
 	export let price: number;
@@ -13,11 +13,13 @@
 
 	const add = () => {
 		$order[compositeId] = counter + 1;
+		$totalOrderValue += price;
 	};
 
 	const substract = () => {
 		if (!$order[compositeId]) return;
 		$order[compositeId] = counter - 1;
+		$totalOrderValue -= price;
 	};
 
 </script>
@@ -27,6 +29,7 @@
 	<span>{price}</span>
 	<div class="calculator">
 		<button on:click={substract}><MinusIcon /></button>
+		<button on:click={counter > 0 ? substract : null}></button>
 		<span class="counter">{counter}</span>
 		<button on:click={add}><PlusIcon /></button>
 	</div>
